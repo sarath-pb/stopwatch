@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch-card">
+            <h1 class="title">Stopwatch</h1>
+            <div class="display">
+                <span id="hours">00</span><span class="colon">:</span><span id="minutes">00</span><span class="colon">:</span><span id="seconds">00</span><span class="ms">.<span id="milliseconds">00</span></span>
+            </div>
+            
+            <div class="controls">
+                <button id="lapBtn" class="btn secondary-btn" disabled>Lap</button>
+                <button id="startStopBtn" class="btn primary-btn">Start</button>
+                <button id="resetBtn" class="btn danger-btn" disabled>Reset</button>
+            </div>
+            
+            <div class="laps-container">
+                <div class="laps-header">
+                    <span>Laps</span>
+                    <button id="clearLapsBtn" class="clear-btn">Clear All</button>
+                </div>
+                <ul id="lapsList" class="laps-list">
+                    <!-- Laps will be added here -->
+                    <li class="empty-laps">No laps recorded</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
